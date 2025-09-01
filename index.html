@@ -5,49 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mubeen Ahmed - Odoo Developer Portfolio</title>
     <!-- Favicon - Browser tab icon -->
-    <link rel="icon" href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgftl5zLH2CUiEX2_BT1vstkMXZOS_5Td9L9dj2yvnPRSVhLD3kHLCJwFwZeQrNYhKMKUxGah48OV8mbvqiV_Hb2qdNq4aLkew5Poq-CV8xSeGuUotqilHl1oBX0CKfRGZzmEMs4x78HS_CWTXzoBw8X07Le1Kdj0KNfXY9rC5vjrnVZXTy_lj7oNHvYXOI/s320/img.png" type="image/png">
+    <link rel="icon" href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg50xvUEwm_pS4fsmUM56GXf-1dkuy1fYsJd0bmFgPmyt8Sv0XcJWpJMB2VA7V17kq0w7Pcol4B91zjFuLigi6BITWpnnID2sTl9-y03tdNGBIV6_cf4z5yJdJQy5Vdttp3GrKJGO4Xot9O6l0r7PGV-DwUvBhCTbm0gNgXewrDdzhduN9k0jamp5IwGVYL/s320/favicon.png" type="image/png">
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- Google Fonts - Inter -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <style>
-        body {
-            font-family: 'Inter', sans-serif;
-            scroll-behavior: smooth; /* Smooth scrolling for navigation */
-            background-color: #f8fafc; /* Light blue-gray background */
-        }
-        .section-padding {
-            padding: 4rem 1rem; /* Consistent padding for sections */
-            max-width: 1200px;
-            margin: 0 auto;
-        }
-        /* Custom scroll-margin-top for sticky header */
-        .scroll-mt-24 {
-            scroll-margin-top: 6rem; /* Adjust this value if header height changes */
-        }
-        /* Custom styling for active navigation link (optional, can be added with JS) */
-        .nav-link.active {
-            color: #1d4ed8; /* Darker blue for active link */
-            font-weight: 600;
-        }
-        /* Basic button styling */
-        .btn-primary {
-            /* Updated: capsule shape, white background, blue text, bold font */
-            background-color: white;
-            color: #1d4ed8;
-            padding: 10px;
-            border-radius: 25px;
-            font-weight: bolder;
-        }
-        .btn-secondary {
-            /* Updated: capsule shape, white background, blue text, bold font */
-            background-color: white;
-            color: #1d4ed8;
-            padding: 10px;
-            border-radius: 25px;
-            font-weight: bolder;
-        }
-    </style>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body class="text-gray-800">
 
@@ -96,28 +59,41 @@
         </div>
     </nav>
 
-    <!-- Hero/Header Section -->
-    <section id="home" class="bg-gradient-to-r from-blue-600 to-purple-600 text-white flex items-center justify-center min-h-screen pt-24 md:pt-0">
-        <div class="section-padding text-center">
-            <div class="flex flex-col md:flex-row items-center justify-center md:space-x-8">
-                <div class="mb-8 md:mb-0">
-                    <!-- Updated: Image source changed to imgs/mubeen.png -->
-                    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgftl5zLH2CUiEX2_BT1vstkMXZOS_5Td9L9dj2yvnPRSVhLD3kHLCJwFwZeQrNYhKMKUxGah48OV8mbvqiV_Hb2qdNq4aLkew5Poq-CV8xSeGuUotqilHl1oBX0CKfRGZzmEMs4x78HS_CWTXzoBw8X07Le1Kdj0KNfXY9rC5vjrnVZXTy_lj7oNHvYXOI/s320/img.png" alt="Mubeen Ahmed" class="rounded-full w-48 h-48 object-cover border-4 border-white shadow-lg mx-auto">
-                </div>
-                <div>
+  
+    <div class="container">
+    <div class="two-part-container min-h-screen pt-24 md:pt-0">
+            <!-- Floating image -->
+            <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgftl5zLH2CUiEX2_BT1vstkMXZOS_5Td9L9dj2yvnPRSVhLD3kHLCJwFwZeQrNYhKMKUxGah48OV8mbvqiV_Hb2qdNq4aLkew5Poq-CV8xSeGuUotqilHl1oBX0CKfRGZzmEMs4x78HS_CWTXzoBw8X07Le1Kdj0KNfXY9rC5vjrnVZXTy_lj7oNHvYXOI/s320/img.png" 
+                 alt="Floating Profile" class="floating-img"/>
+            
+            <!-- Left section -->
+            <div class="section-left" id="home">
+                <!-- <h3 id="shop-name">MUBEEN AHMED</h3> -->
+      
                     <h1 class="text-5xl md:text-6xl font-extrabold mb-4 leading-tight">Mubeen Ahmed</h1>
                     <p class="text-2xl md:text-3xl font-light mb-6">Junior Odoo Developer | Odoie.com</p>
-                    <p class="text-lg md:text-xl max-w-2xl mx-auto mb-8">Crafting efficient and scalable Odoo solutions with a passion for innovation.</p>
-                    <div class="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-4">
-                        <a href="#projects" class="btn-primary">View My Projects</a>
-                        <a href="#contact" class="btn-secondary">Get In Touch</a>
-                    </div>
+                    <p class="text-center md:text-xl max-w-2xl mx-auto mb-8">Crafting efficient and scalable Odoo solutions with a passion for innovation.</p>
+            
+             
+                <div id="btn-crt">
+                    <a href="#projects">MY PROJECTS</a>
+                    <a href="#experience">EXPERIENCE</a>
+                    <a href="#contact">GET IN TOUCH</a>
                 </div>
             </div>
+            </section>
+            <!-- Right section -->
+            <div class="section-right">
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjhbPzztqyzptL6VLZeJwVGMgxSQgn3o-K6GK8jJ8qAjtReJg9ykwCnO7yGSfyBSiYJEwFx-BYUyUSuYT8N0Wx6RIg0j9XXcRK60VrzyVgXXjbjQSzxsbxP9hQTS4G4KW4oQmwTBpVpntDpJ4o2SeanRrrxKs2LUUd9Vha2FYynJeska-Mk3zHc3b_oOzpL/s320/pcc.png" 
+                     alt="First" class="first"/>
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgPuLuly6QZm5UB3RDm8PPC6ETBVGhk3irjZcVjDK5LYyQY2KY8HeiN30MwQ5h3jEouO5AeFAgqrgP_gwea5MnC5LhB-1UTnLtfDwj0IChI1H1LQwZR0fAEwLwYvqEyKiQ4r6Q7vzl1OPw4KdwEiyuOxfc_0jonULzCQk4IYpfi2LGdFE8xKAnqB7PJcpqJ/s320/pp.png" 
+                     alt="Second" class="second"/>
+            </div>
         </div>
-    </section>
+        </div>
 
     <!-- About Me Section -->
+
     <section id="about" class="bg-white section-padding scroll-mt-24">
         <h2 class="text-4xl font-bold text-center mb-12 text-blue-700">About Me</h2>
         <div class="max-w-3xl mx-auto text-lg leading-relaxed text-gray-700">
@@ -127,11 +103,11 @@
         </div>
     </section>
 
-    <!-- Skills Section -->
-    <section id="skills" class="bg-gray-50 section-padding scroll-mt-24">
+   <!-- Skills Section  -->
+<section id="skills" class="bg-gray-50 section-padding scroll-mt-24">
         <h2 class="text-4xl font-bold text-center mb-12 text-blue-700">Skills</h2>
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-4xl mx-auto">
-            <!-- Odoo Development -->
+          <!-- Odoo Development  -->
             <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition duration-300">
                 <h3 class="text-2xl font-semibold mb-4 text-blue-600">Odoo Development</h3>
                 <ul class="list-disc list-inside text-gray-700 space-y-2">
@@ -144,7 +120,7 @@
                     <li>Odoo Customization & Migration</li>
                 </ul>
             </div>
-            <!-- Frontend Technologies -->
+      <!-- Frontend Technologies -->
             <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition duration-300">
                 <h3 class="text-2xl font-semibold mb-4 text-blue-600">Frontend Technologies</h3>
                 <ul class="list-disc list-inside text-gray-700 space-y-2">
@@ -155,7 +131,7 @@
                     <li>Responsive Design</li>
                 </ul>
             </div>
-            <!-- Backend & Databases -->
+       <!-- Backend & Databases  -->
             <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition duration-300">
                 <h3 class="text-2xl font-semibold mb-4 text-blue-600">Backend & Databases</h3>
                 <ul class="list-disc list-inside text-gray-700 space-y-2">
@@ -174,7 +150,7 @@
                     <li>Linux Environment</li>
                 </ul>
             </div>
-            <!-- Soft Skills -->
+           <!-- Soft Skills -->
             <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition duration-300">
                 <h3 class="text-2xl font-semibold mb-4 text-blue-600">Soft Skills</h3>
                 <ul class="list-disc list-inside text-gray-700 space-y-2">
@@ -188,11 +164,11 @@
         </div>
     </section>
 
-    <!-- Projects Section -->
+ <!-- Projects Section  -->
     <section id="projects" class="bg-white section-padding scroll-mt-24">
         <h2 class="text-4xl font-bold text-center mb-12 text-blue-700">Projects</h2>
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
-            <!-- Project 1 -->
+     <!-- Project 1  -->
             <div class="bg-gray-50 p-6 rounded-lg shadow-md hover:shadow-lg transition duration-300 transform hover:-translate-y-1">
                 <img src="https://placehold.co/600x400/e0e7ff/333333?text=Odoo+Project+1" alt="Odoo Project 1" class="rounded-md mb-4 w-full h-48 object-cover">
                 <h3 class="text-2xl font-semibold mb-2 text-blue-600">Custom Odoo-18 New Created Model</h3>
@@ -200,11 +176,11 @@
                 <p class="text-gray-600 text-sm mb-4"><strong>Technologies:</strong> Odoo 18, Python, XML, PostgreSQL, QWeb</p>
                 <div class="flex space-x-4">
                     <a href="https://github.com/Mubeen-Ahmed-MU/Odoo-18-new-module-designed.git" class="text-blue-600 hover:underline font-medium" target="_blank">View Details</a>
-                    <!-- Optional: Link to GitHub or live demo -->
+                   <!-- Optional: Link to GitHub or live demo  -->
                     <a href="https://github.com/Mubeen-Ahmed-MU/Odoo-18-new-module-designed.git" class="text-gray-600 hover:underline font-medium" target="_blank">GitHub Repo</a>
                 </div>
             </div>
-            <!-- Project 2 -->
+          <!-- Project 2  -->
             <div class="bg-gray-50 p-6 rounded-lg shadow-md hover:shadow-lg transition duration-300 transform hover:-translate-y-1">
                 <img src="https://placehold.co/600x400/e0e7ff/333333?text=Odoo+Project+2" alt="Odoo Project 2" class="rounded-md mb-4 w-full h-48 object-cover">
                 <h3 class="text-2xl font-semibold mb-2 text-blue-600">Inventory Management System Enhancements</h3>
@@ -215,7 +191,7 @@
                     <a href="#" class="text-gray-600 hover:underline font-medium" target="_blank">Live Demo</a>
                 </div>
             </div>
-            <!-- Project 3 -->
+          <!-- Project 3  -->
             <div class="bg-gray-50 p-6 rounded-lg shadow-md hover:shadow-lg transition duration-300 transform hover:-translate-y-1">
                 <img src="https://placehold.co/600x400/e0e7ff/333333?text=Odoo+Project+3" alt="Odoo Project 3" class="rounded-md mb-4 w-full h-48 object-cover">
                 <h3 class="text-2xl font-semibold mb-2 text-blue-600">E-commerce Integration with Payment Gateway</h3>
@@ -226,15 +202,15 @@
                     <a href="#" class="text-gray-600 hover:underline font-medium" target="_blank">GitHub Repo</a>
                 </div>
             </div>
-            <!-- Add more projects as needed -->
+          <!-- Add more projects as needed  -->
         </div>
     </section>
 
-    <!-- Experience Section -->
+   <!-- Experience Section -->
     <section id="experience" class="bg-gray-50 section-padding scroll-mt-24">
         <h2 class="text-4xl font-bold text-center mb-12 text-blue-700">Experience</h2>
         <div class="max-w-3xl mx-auto space-y-8">
-            <!-- Current Role -->
+            <!-- Current Role  -->
             <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition duration-300">
                 <h3 class="text-2xl font-semibold text-blue-600">Junior Odoo Developer</h3>
                 <p class="text-xl text-gray-800 mb-2">Odoie.com</p>
@@ -247,9 +223,9 @@
                     <li>Debugging and troubleshooting issues, ensuring the stability and performance of Odoo instances.</li>
                 </ul>
             </div>
-            <!-- Add previous experience if any -->
-            <!-- Example of a previous role (uncomment and fill if applicable) -->
-            <!--
+           <!-- Add previous experience if any 
+             Example of a previous role (uncomment and fill if applicable)
+             -->
             <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition duration-300">
                 <h3 class="text-2xl font-semibold text-blue-600">Intern Odoo Developer</h3>
                 <p class="text-xl text-gray-800 mb-2">Tech Solutions Inc.</p>
@@ -260,17 +236,17 @@
                     <li>Contributed to documentation and testing.</li>
                 </ul>
             </div>
-            -->
+          
         </div>
     </section>
 
-    <!-- Contact Section -->
+ <!-- Contact Section  -->
     <section id="contact" class="bg-white section-padding scroll-mt-24">
         <h2 class="text-4xl font-bold text-center mb-12 text-blue-700">Get In Touch</h2>
         <div class="max-w-2xl mx-auto text-center">
             <p class="text-lg text-gray-700 mb-8">I'm always open to new opportunities and collaborations. Feel free to reach out!</p>
             <div class="flex flex-col sm:flex-row justify-center items-center space-y-4 sm:space-y-0 sm:space-x-6 mb-12">
-                <!-- Contact links with white background, rounded corners, padding, and blue text -->
+                <!-- Contact links with white background, rounded corners, padding, and blue text  -->
                 <a href="mailto:mubeen110ms@gmail.com" class="contact-link bg-white p-4 rounded-lg shadow-sm hover:shadow-md transition duration-300 flex items-center text-blue-600 hover:text-blue-800">
                     <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8m-1 4v6a2 2 0 01-2 2H6a2 2 0 01-2-2v-6" />
@@ -291,7 +267,7 @@
                 </a>
             </div>
 
-            <!-- Optional: Simple Contact Form (Frontend only, won't send emails without backend) -->
+        <!-- Optional: Simple Contact Form (Frontend only, won't send emails without backend)  -->
             <form class="bg-white p-8 rounded-lg shadow-md">
                 <h3 class="text-2xl font-semibold mb-6 text-blue-600">Send me a message</h3>
                 <div class="mb-4 text-left">
@@ -373,7 +349,7 @@
             sections.forEach(section => {
                 const sectionTop = section.offsetTop;
                 const sectionHeight = section.clientHeight;
-                if (pageYOffset >= sectionTop - 100) { // Adjust 100px for offset
+                if (pageYOffset >= sectionTop - 100) { 
                     current = section.getAttribute('id');
                 }
             });
@@ -386,25 +362,24 @@
             });
         });
 
-        // Handle form submission (frontend only - no actual email sending)
+    
         const contactForm = document.querySelector('#contact form');
         const formMessage = document.getElementById('form-message');
 
         contactForm.addEventListener('submit', function(e) {
             e.preventDefault(); // Prevent default form submission
 
-            // In a real application, you would send this data to a backend server
-            // For this example, we'll just show a success message
+        
             formMessage.classList.remove('hidden');
             formMessage.textContent = 'Thank you for your message! I will get back to you soon.';
             contactForm.reset(); // Clear the form fields
 
-            // Hide the message after a few seconds
+         
             setTimeout(() => {
                 formMessage.classList.add('hidden');
             }, 5000);
         });
-    </script>
+    </script> 
 </body>
 </html>
 
